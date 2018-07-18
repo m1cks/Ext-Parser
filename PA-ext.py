@@ -30,9 +30,8 @@ dirlist = os.listdir('.')
 for i in dirlist:
     if Period in i:
         File = i.split('.')
-        Extension = File[1]
+        Extension = File[-1]
         if Extension == 'dd': #you can select other Extension
-            n +=1
             NSF_lis.append(i)
             
 n = 0
